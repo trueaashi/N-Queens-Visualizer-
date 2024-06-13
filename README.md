@@ -10,6 +10,10 @@ The N-Queens puzzle is the problem of placing N chess queens on an N×N chessboa
 - JavaScript
 - CSS
 - HTML
+- chess-queens (for solving the N-Queens puzzle)
+- Data-Structure (for implementing the solution algorithm)
+- Visualisation
+
 
 ## Features
 
