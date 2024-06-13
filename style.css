@@ -1,0 +1,240 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* body {
+  background: url('images/N-Queen3.png') no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+} */
+
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px; /* Set height according to your design */
+  width: 100%;
+  background-color:#472875;
+  color: #fdfffc;
+}
+
+.header h2 {
+  padding: 1.5em;
+  margin: 80px; /* Remove default margin */
+}
+
+
+div.n-queen {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  max-width: 450px;
+  /* border: 1px solid red; */
+}
+
+.inputbox {
+  position: relative;
+  top: 2.5em;
+  bottom: 2em;
+}
+
+.numberbox {
+  width: 100%;
+  font-size: 14px;
+  padding: 4px;
+  border: none;
+  border-bottom: 2px solid #472875;
+  outline: none;
+  background: transparent;
+}
+
+.inputbox label {
+  position: absolute;
+  top: 4px;
+  left: 0px;
+  color: #ad4ea1;
+  font-size: 14px;
+  pointer-events: none;
+  transition: 0.3s;
+}
+
+.inputbox input:focus ~ label,
+.inputbox input:disabled ~ label,
+.inputbox input:valid ~ label {
+  top: -9px;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.slider-container {
+  position: absolute;
+  left: 5%;
+  width: 90%;
+  /* text-align: center; */
+  margin: 0 auto;
+  top: 5em;
+  /* border: 2px solid red; */
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  margin: 0 auto;
+  height: 7px;
+  border-radius: 7px;
+  background: linear-gradient(90deg, #f2cfe6 60%, #f2cfe6 60%);
+  outline: none;
+}
+
+.slider::after {
+  content: "SLOW";
+  position: absolute;
+  top: -10px;
+  font-size: 14px;
+  font-weight: 500;
+  color:#0c0c0c;
+}
+
+.slider::before {
+  content: "FAST";
+  position: absolute;
+  top: -10px;
+  right: 0px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #0c0c0c;
+}
+
+/* Google chrome */
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  top: -2px;
+  cursor: pointer;
+  background-color: #472875;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.slider::-webkit-slider-runnable-track {
+  -webkit-appearance: none;
+  height: 15px;
+  width: 15px;
+  z-index: 1;
+  color: #472875;
+}
+
+/* Mozilla firefox */
+.slider::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  background-color: #9E7BB9;
+  cursor: pointer;
+  position: relative;
+  top: -2px;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.slider::-webkit-slider-thumb:hover {
+  box-shadow: 0 0 0 2px white, 0 0 0 4px #9E7BB9;
+}
+
+#progress-bar {
+  width: 60%;
+  height: 7px;
+  background:#6e369a;
+  border-radius: 7px;
+  position: absolute;
+  top: 10px;
+}
+
+.play-button {
+  position: relative;
+  top: 110px;
+  left: 35%;
+  border: none;
+  outline: none;
+  color: #fdfffc;
+  width: 80px;
+  height: 35px;
+  background-color: #a429d8;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  /* z-index: 1; */
+}
+
+.play-button:hover {
+  opacity: 0.8;
+  transform: scale(1.05);
+}
+
+.queen-arrangement {
+  position: relative;
+  top: 140px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  color: #9E7BB9;
+}
+
+#n-queen-board {
+  position: relative;
+  display: flex;
+  width: 80%;
+  top: 150px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#n-queen-board div {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 10px;
+  box-shadow: 0 4px 8px 0 rgb(0, 0, 0, 0.2);
+  border-radius: 3px;
+  bottom: 10px;
+}
+
+table {
+  position: relative;
+  border-collapse: collapse;
+  margin: -10px 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+  align-self: center;
+}
+
+td {
+  width: 35px;
+  height: 35px;
+  text-align: center;
+}
+
+h4 {
+  position: relative;
+  top: -5px;
+  padding: 8px;
+  width: 95%;
+  background-color: #472875;
+  align-self: center;
+  color: #fdfffc;
+  text-align: center;
+  border-radius: 4px 4px 0 0;
+}
