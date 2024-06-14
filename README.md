@@ -36,6 +36,9 @@ The N-Queens puzzle is the problem of placing N chess queens on an N×N chessboa
 - Given an integer N (user input), the application shows all distinct solutions to the N-queens puzzle.
 - This algorithm is designed using recursion and backtracking to efficiently find and display the solutions.
 
+## Real-Life Applications 
+- Task scheduling and assignment, computer resource management, and VLSI testing.
+
 ## Getting Started
 
 - Clone the repository: `git clone https://github.com/trueaashi/N-Queens-Visualizer-.git`
