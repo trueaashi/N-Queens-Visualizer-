@@ -14,6 +14,9 @@ The N-Queens puzzle is the problem of placing N chess queens on an N×N chessboa
 - Data-Structure (for implementing the solution algorithm)
 - Visualisation
 
+## Live Demo
+
+The site is Live at [Live](https://trueaashi.github.io/N-Queens-Visualizer-/).
 
 ## Features
 
